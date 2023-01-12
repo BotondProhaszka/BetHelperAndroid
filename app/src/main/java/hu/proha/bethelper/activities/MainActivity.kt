@@ -1,4 +1,4 @@
-package hu.proha.bethelper
+package hu.proha.bethelper.activities
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -10,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import hu.proha.bethelper.R
 import hu.proha.bethelper.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
