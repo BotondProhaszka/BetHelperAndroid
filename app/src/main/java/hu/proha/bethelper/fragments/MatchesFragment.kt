@@ -57,7 +57,9 @@ class MatchesFragment : Fragment() {
     private fun fab_load(){
 
         CoroutineScope(Dispatchers.IO).launch {
+            //matches = ArrayList(footballDataRepository.getMatchesByCountryWithDate("DE", "2022-11-10", "2022-11-15"))
             matches = ArrayList(footballDataRepository.getMatches())
+
             withContext(Dispatchers.Main) {
                 Log.d("ASD", "Num of matches: ${matches.size}")
                 matchesAdapter.submitList(matches)
