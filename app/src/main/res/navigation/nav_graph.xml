@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_matches">
+
+    <fragment
+        android:id="@+id/nav_matches"
+        android:name="hu.proha.bethelper.fragments.MatchesFragment"
+        android:label="Meccsek"
+        tools:layout="@layout/fragment_matches" >
+        <action
+            android:id="@+id/action_nav_matches_to_nav_bet"
+            app:destination="@id/nav_bet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bet"
+        android:name="hu.proha.bethelper.fragments.BetFragment"
+        android:label="Fogadások"
+        tools:layout="@layout/fragment_bet" >
+        <action
+            android:id="@+id/action_nav_bet_to_nav_matches"
+            app:destination="@id/nav_matches" />
+    </fragment>
+
+</navigation>
