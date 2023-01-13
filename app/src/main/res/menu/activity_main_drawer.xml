@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_matches"
+            android:icon="@drawable/ic_baseline_sports_football_24"
+            android:title="@string/menu_matches" />
+        <item
+            android:id="@+id/nav_bets"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="@string/menu_bets" />
+    </group>
+</menu>

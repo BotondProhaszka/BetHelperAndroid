@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.BetHelper" parent="Base.Theme.BetHelper" />
+
+    <style name="Theme.BetHelper.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BetHelper.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
